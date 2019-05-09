@@ -1,0 +1,60 @@
+<div class="neo-widget widget--interaction-operations">
+
+  <div class="neo-widget__header aoc-transfer-forward">Interaction Operations</div>
+
+  <div class="neo-widget__content neo-widget__content--indented" cc-scrollbar>
+
+    <!-- Consult -->
+    <h5 role="heading" aria-label="">Consult:</h5>
+    <label for="input-group-addon-on-left-consult">Enter an address to consult:</label>
+    <div class="neo-input-group neo-input-group__consult">
+      <div class="neo-input-group__addon aoc-agents-inverted"></div>
+      <input ng-show="!capabilities.interaction.canConferenceComplete" id="input-group-addon-on-left-consult" class="neo-input"
+             ng-disabled="!capabilities.interaction.canConsult" ng-model="info.consultAddress" placeholder="Type a number..."/>
+      <button ng-show="!capabilities.interaction.canConferenceComplete" class="neo-btn" ng-disabled="!capabilities.interaction.canConsult" role="button"
+              ng-click="consult()" aria-label="Consult Button">Consult</button>
+      <button ng-show="capabilities.interaction.canTransferComplete" class="neo-btn" role="button" ng-click="completeTransfer()"
+              aria-label="Complete Transfer Button">Complete Transfer</button>
+      <button ng-show="capabilities.interaction.canConferenceComplete" class="neo-btn" role="button" ng-click="completeConference()"
+              aria-label="Complete Conference Button">Complete Conference</button>
+      <button ng-show="!capabilities.interaction.canConsult && capabilities.interaction.canConferenceComplete" class="neo-btn" role="button"
+              ng-click="endConsult()" aria-label="End Consult Button">End Consult</button>
+    </div>
+
+    <!-- UUI -->
+    <div ng-show="!capabilities.interaction.canConferenceComplete">
+      <label class="neo-switch neo-switch__uui" for="uuiSwitch">
+        <input id="uuiSwitch" type="checkbox" role="checkbox" ng-model="isUuiEnabled" ng-change="onUuiSwitchChanged(isUuiEnabled)">
+        <i class="neo-switch__icon"></i>
+        Send UUI:
+      </label>
+      <div ng-show="isUuiEnabled" class="neo-input-group">
+        <div class="neo-input-group__addon aoc-suggested-content"></div>
+        <input id="uuiInput" class="neo-input" ng-model="info.uui" placeholder="Enter UUI..."/>
+      </div>
+    </div>
+
+    <!-- Single Step Transfer -->
+    <h5 role="heading" class="heading__transfer">Single Step Transfer:</h5>
+    <label for="input-group-addon-on-left-transfer">Enter destination address:</label>
+    <div class="neo-input-group">
+      <div class="neo-input-group__addon aoc-transfer-forward"></div>
+      <input id="input-group-addon-on-left-transfer" class="neo-input" ng-disabled="!capabilities.interaction.canSingleStepTransfer"
+             ng-model="info.transferAddress" placeholder="Type a number..."/>
+      <button class="neo-btn" ng-disabled="!capabilities.interaction.canSingleStepTransfer" role="button"
+              ng-click="singleStepTransfer()" aria-label="Transfer Button">Transfer</button>
+    </div>
+
+    <!-- Other Operations -->
+    <h5 role="heading" class="heading__other_operations" aria-label="">Other Operations:</h5>
+    <button ng-show="capabilities.interaction.canAccept" class="neo-btn" role="button" ng-click="acceptInteraction()">Accept Interaction</button>
+    <button ng-show="capabilities.interaction.canHold" class="neo-btn" role="button" ng-click="holdInteraction()">Hold Interaction</button>
+    <button ng-show="capabilities.interaction.canUnhold" class="neo-btn" role="button" ng-click="unholdInteraction()">Unhold Interaction</button>
+    <button ng-show="capabilities.interaction.canEnd" class="neo-btn neo-btn--warning" role="button" ng-click="endInteraction()">End Interaction</button>
+
+    <div class="grid--medium-12 grid--large-12 heading__interaction_data">
+      <h3>Interaction Data</h3>
+      <pre>{{ interaction | json }}</pre>
+    </div>
+  </div>
+</div>

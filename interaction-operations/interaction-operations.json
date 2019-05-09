@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Interaction Operations",
+    "description": "Sample widget to exercise interaction operations.",
+    "tags": "interaction, widget, example, consult, transfer",
+    "library": "library",
+    "version": "1.0.0",
+    "date": "2018-01-19T12:00:36.480Z",
+    "id": "f3e5c2f0-c69a-4e68-a343-daa945d9db78"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "f3e5c2f0-c69a-4e68-a343-daa945d9db78",
+    "element": "<interaction-operations></interaction-operations>",
+    "icon": "aoc-home",
+    "files": ["interaction-operations/interaction-operations.css", "interaction-operations/interaction-operations.js"]
+  }
+}

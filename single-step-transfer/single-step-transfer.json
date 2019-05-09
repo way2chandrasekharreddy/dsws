@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Single Step Transfer",
+    "description": "Single Step Transfer example",
+    "tags": "widget, example, transfer, single, step, voice",
+    "library": "Other",
+    "version": "1.0.0",
+    "date": "2017-12-15T13:56:52.099Z",
+    "id": "07314585-9ec4-48b6-8b5b-42cde459b149"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "07314585-9ec4-48b6-8b5b-42cde459b149",
+    "element": "<single-step-transfer></single-step-transfer>",
+    "icon": "aoc-home",
+    "files": ["single-step-transfer/single-step-transfer.css", "single-step-transfer/single-step-transfer.js"]
+  }
+}

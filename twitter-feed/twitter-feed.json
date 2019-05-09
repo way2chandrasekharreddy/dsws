@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Twitter Feed",
+    "description": "Twitter Feed",
+    "tags": "demo, twitter, social",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-25T13:09:31.011Z",
+    "id": "4456e87e-0e7f-4293-8308-5c7aeae7c4b2"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "4456e87e-0e7f-4293-8308-5c7aeae7c4b2",
+    "element": "<twitter-feed></twitter-feed>",
+    "icon": "aoc-home",
+    "files": ["twitter-feed/twitter-feed.css", "twitter-feed/twitter-feed.js"]
+  }
+}

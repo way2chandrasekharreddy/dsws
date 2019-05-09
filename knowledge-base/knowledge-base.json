@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Knowledge Base",
+    "description": "Knowledge base word cloud with google search capabilities",
+    "tags": "demo, widget, example, other",
+    "library": "My library",
+    "version": "1.0.0",
+    "date": "2018-01-12T16:53:41.987Z",
+    "id": "aa51e100-f601-4f2c-ba4c-767a05c45ebe"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "aa51e100-f601-4f2c-ba4c-767a05c45ebe",
+    "element": "<knowledge-base></knowledge-base>",
+    "icon": "aoc-coach",
+    "files": ["knowledge-base/knowledge-base.css", "knowledge-base/knowledge-base.js"]
+  }
+}

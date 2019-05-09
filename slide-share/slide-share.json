@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Slide Share",
+    "description": "Slide Share",
+    "tags": "demo, slide, share, presentation",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-25T13:09:23.791Z",
+    "id": "e9968f5d-d28d-446f-97b8-9c328756596f"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "e9968f5d-d28d-446f-97b8-9c328756596f",
+    "element": "<slide-share></slide-share>",
+    "icon": "aoc-home",
+    "files": ["slide-share/slide-share.css", "slide-share/slide-share.js"]
+  }
+}

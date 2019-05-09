@@ -1,0 +1,59 @@
+.widget--c3i-address-book md-content {
+ background-color: white;
+}
+
+.widget--c3i-address-book div.c3i-address-book-content {
+ position: absolute;
+ width: 100%;
+ top: 0;
+ bottom: 0;
+}
+
+.widget--c3i-address-book div.c3i-address-book-content .contact-list md-list {
+ margin: 0 10px;
+}
+
+.widget--c3i-address-book div.c3i-address-book-content .contact-edit, .widget--c3i-address-book div.c3i-address-book-content .contact-details {
+ margin: 0 10px;
+}
+
+.widget--c3i-address-book div.c3i-address-book-content .contact-details .md-input{
+    color: rgba(0,0,0,0.87);
+}
+
+.widget--c3i-address-book .search-box {
+ max-width: 100%;
+}
+
+.widget--c3i-address-book .supervisor-info {
+ padding: 10px 10px 0 10px;
+}
+
+.widget--c3i-address-book .contact-list-item .md-list-item-text {
+ flex: 1 1 auto;
+}
+
+.widget--c3i-address-book .contact-list-item h5 {
+ line-height: 1.5;
+ font-weight: 400;
+ letter-spacing: 0.010em;
+ margin: 0 0 0 10px;
+}
+
+.widget--c3i-address-book table.md-table:not(.md-row-select) td.md-cell:nth-child(n+2):nth-last-child(n+2), .widget--c3i-address-book table.md-table:not(.md-row-select) th.md-column:nth-child(n+2):nth-last-child(n+2) {
+ padding: 0 !important;
+}
+
+.widget--c3i-address-book table.md-table:not(.md-row-select) td.md-cell:first-child, .widget--c3i-address-book table.md-table:not(.md-row-select) th.md-column:first-child {
+ max-width: 84px;
+ text-align: center;
+}
+
+.widget--c3i-address-book table.md-table td.md-cell:last-child, .widget--c3i-address-book table.md-table th.md-column:last-child {
+ text-align: right;
+ padding: 0 !important;
+}
+
+.widget--c3i-address-book md-input-container:not(.md-input-invalid) .md-input, .widget--c3i-address-book md-select.md-default-theme .md-select-value, .widget--c3i-address-book md-select .md-select-value {
+ border-color: #6a788a;
+}

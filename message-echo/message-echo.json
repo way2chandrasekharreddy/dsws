@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Message Echo",
+    "description": "Message Echo",
+    "tags": "demo, message, example, echo",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-25T13:35:40.790Z",
+    "id": "4fb7cac3-a96b-44ae-93f0-1fc97f387062"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "4fb7cac3-a96b-44ae-93f0-1fc97f387062",
+    "element": "<message-echo></message-echo>",
+    "icon": "aoc-home",
+    "files": ["message-echo/message-echo.css", "message-echo/message-echo.js"]
+  }
+}

@@ -1,0 +1,27 @@
+.widget--interaction-operations pre {
+  border: 3px solid #e3e3e3;
+  background: lightyellow;
+  padding: 10px;
+}
+
+.neo-switch__uui {
+  margin-bottom: 2px !important;
+}
+
+.neo-input-group__consult {
+  margin-bottom: 10px !important;
+}
+
+.heading__transfer {
+  margin-top: 30px !important;
+}
+
+.heading__other_operations {
+  margin-top: 30px !important;
+}
+
+.heading__interaction_data {
+  margin-top: 30px !important;
+}
+
+

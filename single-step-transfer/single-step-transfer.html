@@ -1,0 +1,29 @@
+<div class="neo-widget">
+
+  <div class="neo-widget__header aoc-transfer-forward">Single Step Transfer</div>
+
+  <div class="neo-widget__content neo-widget__content--indented">
+
+    <!-- Enter address input box -->
+    <label for="input-group-addon-on-left">Enter destination address:</label>
+    <div class="neo-input-group">
+      <div class="neo-input-group__addon aoc-voice-channel"></div>
+      <input id="input-group-addon-on-left" class="neo-input" ng-model="address" placeholder="Type a number..." />
+      <button class="neo-btn" role="button" ng-click="singleStepTransfer(address)" aria-label="Transfer Button">Transfer</button>
+    </div>
+
+    <!-- Departments selection -->
+    <h5>Or select a department:</h5>
+    <div class="row department__row" ng-repeat="department in departments" ng-click="singleStepTransferDepartment(department)">
+      <div class="grid--medium-12 department-backround" ng-style="{'background-image':
+        'linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url( {{::department.imageUrl}} )'}">
+        <h2 class="department-backround__text">{{ department.name }}</h2>
+      </div>
+    </div>
+
+  </div>
+</div>

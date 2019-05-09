@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "PDF Viewer",
+    "description": "PDF Viewer",
+    "tags": "demo, PDF, viewer",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-25T13:09:18.264Z",
+    "id": "ec384f9d-0aad-4266-8a2e-44f61c180f17"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "ec384f9d-0aad-4266-8a2e-44f61c180f17",
+    "element": "<pdf-viewer></pdf-viewer>",
+    "icon": "aoc-home",
+    "files": ["pdf-viewer/pdf-viewer.css", "pdf-viewer/pdf-viewer.js"]
+  }
+}

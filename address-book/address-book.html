@@ -1,0 +1,25 @@
+<div class="neo-widget">
+
+  <div class="neo-widget__header aoc-dialpad">Address Book</div>
+
+  <div class="neo-widget__content neo-widget__content--indented">
+    <div class="row">
+      <div class="neo-input-group ">
+        <div class="neo-input-group__addon aoc-voice-channel"></div>
+        <input class="neo-input" value="" ng-model="customNumber" placeholder="Type a number..." role="textbox"/>
+        <button class="neo-btn" role="button" ng-click="call(customNumber)" ng-show="canStartVoiceInteraction">Call</button>
+      </div>
+    </div>
+    <div class="row" ng-repeat="item in contacts">
+      <div class="grid--medium-2">
+        <figure class="neo-avatar" data-initials="{{ item.initials }}" title="{{ item.name }}"></figure>
+      </div>
+      <div class="grid--medium-6">
+        <span> Name: {{ item.name }}</span> </br>
+        <small> Ph: : {{ item.address }}</small>
+      </div>
+      <div class="grid--medium-4">
+        <button class="neo-btn  callbtn" ng-click="call(item.address)" ng-show="canStartVoiceInteraction"> Call </button>
+      </div>
+    </div>
+  </div>

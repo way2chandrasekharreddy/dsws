@@ -1,0 +1,37 @@
+<div class="neo-widget neo-widget--knowledge-base">
+
+  <div class="neo-widget__header aoc-coach">Knowledge Base Sample Widget
+    <div class="refresh-button">
+      <md-button ng-if="cloudWordsArray.length" class="neo-btn restart-button" ng-click="clearCloud()">Restart</md-button>
+    </div>
+  </div>
+
+  <div class="neo-widget__content neo-widget__content--indented">
+    <div class="row">
+      <span class="cloud-heading" ng-if="cloudWordsArray.length">Keywords</span>
+      <span class="waiting-div" ng-if="cloudWordsArray.length===0">Waiting for incoming messages...</span>
+      <div class="col-medium-12 col-large-12 word-cloud-outer-div" ng-class="{'add-border': cloudWordsArray.length}">
+        <div class="word-cloud-inner-div">
+          <p>
+          <span ng-if="word.word.length" ng-style="{'font-size': word.fontsize, 'color': word.color}" ng-class="{'word': word.word.length}" href ng-repeat="word in cloudWordsArray track by $index" ng-click="addToInput(word)">
+            {{word.word}}&nbsp
+          </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--script for embedding Custom Google search inside widgets-->
+    <script>
+        (function() {
+            //Custom ID used for specifying which websites to search. Using https://developers.google.com/ as example
+            var cx = '017643444788069204610:4gvhea_mvga';
+            var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+            gcse.src = (document.location.protocol == 'https' ? 'https:' : 'https:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+        })();
+    </script>
+    <gcse:search></gcse:search>
+  </div>
+
+</div>

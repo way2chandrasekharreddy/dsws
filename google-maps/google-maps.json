@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Google Maps",
+    "description": "Google Maps",
+    "tags": "demo, google, maps",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-25T13:09:02.960Z",
+    "id": "4dfd604b-f25a-42f7-b311-349d772d4d5f"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "4dfd604b-f25a-42f7-b311-349d772d4d5f",
+    "element": "<google-maps></google-maps>",
+    "icon": "aoc-home",
+    "files": ["google-maps/google-maps.css", "google-maps/google-maps.js"]
+  }
+}

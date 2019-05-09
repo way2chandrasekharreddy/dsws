@@ -1,0 +1,168 @@
+<div class="neo-widget widget--c3i-address-book">
+    <div class="neo-widget__header aoc-agents">C3i Address Book</div>
+    <div class="neo-widget__content">
+        <div class="c3i-address-book-content" ng-show="!editingContact && !openedContact" layout="column">
+            <md-content style="min-height: 70px;">
+                <div class="supervisor-info" layout="row" layout-align="space-between center" >
+                    <span>Please choice contact list</span>
+                    <md-select ng-model="supervisorsData.selectedSupervisor"
+                              class="md-no-underline"
+                               ng-change="updateContactList()">
+                        <md-option ng-value="supervisor"
+                                   ng-repeat="supervisor in supervisorsData.supervisors">
+                            {{ supervisor}}
+                        </md-option>
+                    </md-select>
+                </div>
+             <!--    <div class="supervisor-info" layout="row" layout-align="space-between center"
+                     ng-if="role !=='SUPER_ADMIN'">
+                    <span>Your supervisor is {{ supervisorsData.selectedSupervisor.firstName ? supervisorsData.selectedSupervisor.firstName + ' ' + supervisorsData.selectedSupervisor.lastName : supervisorsData.selectedSupervisor.supervisorHandle }}.</span>
+                </div> -->
+                <div layout="row">
+                    <md-input-container md-no-float class="md-block cc-input search-box aoc-search" flex>
+                        <input placeholder="{{ 'Search Contacts' }}" ng-model="contactsSearch"
+                               ng-change="filterContacts()" aria-label="Search Contacts" md-autofocus cc-focus>
+                    </md-input-container>
+                </div>
+            </md-content>
+            <md-content class="contact-list" flex cc-scrollbar>
+                <md-table-container>
+                    <table md-table md-progress="contactsGettingPromise">
+                        <thead md-head md-order="orderBy">
+                        <tr md-row>
+                            <th md-column></th>
+                            <th md-column md-order-by="firstname">First name</th>
+                            <th md-column md-order-by="lastname">Last name</th>
+                            <th md-column>
+                                <md-button class="md-icon-button" ng-click="updateContactList()"
+                                           aria-label="Click to refresh contact list" cc-tooltip>
+                                    <md-icon class="aoc-refresh"></md-icon>
+                                </md-button>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody md-body>
+                        <tr md-row
+                            ng-repeat="contact in contacts | orderBy: orderBy | filter: contactsSearch track by $index">
+                            <td md-cell ng-click="openContact(contact)">
+                                <cc-text-avatar text="contact.firstname + ' ' + contact.lastname"></cc-text-avatar>
+                            </td>
+                            <td md-cell ng-click="openContact(contact)">{{contact.firstname}}</td>
+                            <td md-cell ng-click="openContact(contact)">{{contact.lastname}}</td>
+                            <td md-cell>
+                                <div ng-if="role !== 'AGENT' || contact.createdby===userConfiguration.handle">
+                                    <md-button class="md-icon-button" ng-click="editContact(contact.contactId)"
+                                               aria-label="Click to edit {{ contact.firstname + ' ' + contact.lastname }}"
+                                               cc-tooltip>
+                                        <md-icon class="aoc-edit"></md-icon>
+                                    </md-button>
+                                    <md-button class="md-icon-button" ng-click="showDeleteConfirm($event, contact)"
+                                               aria-label="Click to delete {{ contact.firstname + ' ' + contact.lastname }}"
+                                               cc-tooltip>
+                                        <md-icon class="aoc-end"></md-icon>
+                                    </md-button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr md-row ng-if="!contacts || contacts.length===0">
+                            <td md-cell colspan="4">
+                                <div class="content--empty aoc-agents">
+                                    <p>No contacts to display</p>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </md-table-container>
+            </md-content>
+            <md-content style="min-height: 40px;" layout="row" layout-align="center none">
+                <md-button class="md-icon-button" ng-click="addContact()" aria-label="{{ 'Click for add new contact' }}"
+                        cc-tooltip>
+                    <md-icon class="aoc-add"></md-icon>
+                </md-button>
+            </md-content>
+        </div>
+        <div class="c3i-address-book-content" ng-if="editingContact" layout="column">
+            <md-content class="contact-edit" cc-scrollbar>
+                    <md-input-container md-no-float class="md-block cc-input" flex>
+                        <label>First name:</label>
+                        <input ng-model="editingContact.firstname" name="firstname">
+                    </md-input-container>
+                    <md-input-container md-no-float class="md-block cc-input" flex>
+                        <label>Last name:</label>
+                        <input ng-model="editingContact.lastname" name="lastname">
+                    </md-input-container>
+                    <md-input-container md-no-float class="md-block cc-input" flex>
+                        <label>Phone:</label>
+                        <input ng-model="editingContact.phone" name="phone">
+                    </md-input-container>
+                    <md-input-container md-no-float class="md-block cc-input" flex>
+                        <label>Extension:</label>
+                        <input ng-model="editingContact.extension" name="extension">
+                    </md-input-container>
+                    <md-input-container md-no-float class="md-block cc-input" flex>
+                        <label>Email address:</label>
+                        <input ng-model="editingContact.email" name="email">
+                    </md-input-container>
+                   <md-input-container md-no-float class="md-block cc-input" flex>
+                        <label>Organization:</label>
+                        <md-select ng-model="editingContact.organization" placeholder="Organization" name="organization">
+                        <md-option ng-value="supervisorsData.supervisors[$index]"
+                                   ng-repeat="org in supervisorsData.supervisors track by $index">
+                                {{::org }}
+                        </md-option>
+                    </md-select>
+                </md-input-container> 
+            </md-content>
+            <md-content layout="row" layout-align="end none">
+                <md-button ng-if="!editingContact.contactId" class="md-icon-button" ng-click="createContact()"
+                           aria-label="{{ 'Click to create changes' }}" cc-tooltip>
+                    <md-icon class="aoc-accept"></md-icon>
+                </md-button>
+                <md-button ng-if="editingContact.contactId" class="md-icon-button" ng-click="saveContact()"
+                           aria-label="{{ 'Click to save changes' }}" cc-tooltip>
+                    <md-icon class="aoc-accept"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" ng-click="cancelEditing()"
+                           aria-label="{{ 'Click to cancel contact editing' }}" cc-tooltip>
+                    <md-icon class="aoc-end"></md-icon>
+                </md-button>
+            </md-content>
+        </div>
+
+        <div class="c3i-address-book-content" ng-if="openedContact" layout="column">
+            <md-content class="contact-details" cc-scrollbar>
+                <md-input-container md-no-float class="md-block cc-input" flex>
+                    <label>Firstname:</label>
+                    <input ng-model="openedContact.firstname" ng-disabled="true">
+                </md-input-container>
+                <md-input-container md-no-float class="md-block cc-input" flex>
+                    <label>Lastname:</label>
+                    <input ng-model="openedContact.lastname" ng-disabled="true">
+                </md-input-container>
+                <md-input-container md-no-float class="md-block cc-input" flex>
+                    <label>Phone:</label>
+                    <input ng-model="openedContact.phone" ng-disabled="true">
+                </md-input-container>
+                <md-input-container md-no-float class="md-block cc-input" flex>
+                    <label>Extension:</label>
+                    <input ng-model="openedContact.extension" ng-disabled="true">
+                </md-input-container>
+                <md-input-container md-no-float class="md-block cc-input" flex>
+                    <label>Emailaddress:</label>
+                    <input ng-model="openedContact.email" ng-disabled="true">
+                </md-input-container>
+                <md-input-container md-no-float class="md-block cc-input" flex>
+                    <label>Organization:</label>
+                    <input ng-model="openedContact.organization" ng-disabled="true">
+                </md-input-container>
+            </md-content>
+            <md-content layout="row" layout-align="end none">
+                <md-button class="md-icon-button" ng-click="closeContact()"
+                           aria-label="{{ 'Click to close contact details' }}" cc-tooltip>
+                    <md-icon class="aoc-end"></md-icon>
+                </md-button>
+            </md-content>
+        </div>
+    </div>
+</div>

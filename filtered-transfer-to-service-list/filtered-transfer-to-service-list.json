@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Filtered Transfer to Service List",
+    "description": "Sample widget to test transfer to service list feature",
+    "tags": "demo, widget, example, other",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2018-01-26T01:17:14.329Z",
+    "id": "f30019ed-c4a1-4cc8-bfd1-43efee845133"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "f30019ed-c4a1-4cc8-bfd1-43efee845133",
+    "element": "<filtered-transfer-to-service-list></filtered-transfer-to-service-list>",
+    "icon": "aoc-home",
+    "files": ["filtered-transfer-to-service-list/filtered-transfer-to-service-list.css", "filtered-transfer-to-service-list/filtered-transfer-to-service-list.js"]
+  }
+}

@@ -1,0 +1,13 @@
+.widget--prompt-digits {
+}
+
+.widget--prompt-digits p {
+  margin: 0;
+  font-size: 2em;
+}
+
+.widget--prompt-digits pre {
+  border: 2px solid #e3e3e3;
+  background: lightyellow;
+  padding: 10px;
+}

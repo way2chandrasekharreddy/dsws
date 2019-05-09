@@ -1,0 +1,21 @@
+<div>
+    <div>C3i Address Book</div>
+    <div>
+        <div ng-show="!editingContact && !openedContact" layout="column">
+            <md-content >
+                <div>
+                    <span>Please choice contact list</span>
+                    <md-select ng-model="supervisorsData.selectedSupervisor"
+                               class="md-no-underline"
+                               ng-change="updateContactList()">
+                        <md-option ng-value="supervisor"
+                                   ng-repeat="supervisor in supervisorsData.supervisors">
+                            {{ supervisor}}
+                        </md-option>
+                    </md-select>
+
+                </div>
+            </md-content>
+        </div>
+    </div>
+</div>

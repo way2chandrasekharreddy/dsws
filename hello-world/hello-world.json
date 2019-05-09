@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "name": "Hello World",
+    "description": "Basic Hello world example",
+    "tags": "agent, demo, hello, world",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-02-14T23:24:41.230Z",
+    "id": "5e066f61-5794-4aab-bc1d-3dda05743062"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "5e066f61-5794-4aab-bc1d-3dda05743062",
+    "element": "<hello-world></hello-world>",
+    "icon": "aoc-home",
+    "files": [
+      "hello-world/libs/external.js",
+      "hello-world/libs/miniq.js",
+      "hello-world/hello-world.css",
+      "hello-world/hello-world.js"
+    ]
+  }
+}

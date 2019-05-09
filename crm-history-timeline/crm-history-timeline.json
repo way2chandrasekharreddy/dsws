@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "name": "Customer History Timeline",
+    "description": "Shows CRM customer history using timeline",
+    "tags": "agent, demo, timeline, salesforce, CRM, customer, history",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-22T23:24:41.230Z",
+    "id": "508dbf3c-4de7-4338-bca2-134967ed149b"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "508dbf3c-4de7-4338-bca2-134967ed149b",
+    "element": "<crm-history-timeline></crm-history-timeline>",
+    "icon": "aoc-timeline",
+    "files": [
+      "crm-history-timeline/libs/vis.min.js",
+      "crm-history-timeline/crm-history-timeline.css",
+      "crm-history-timeline/crm-history-timeline.js"
+    ]
+  }
+}

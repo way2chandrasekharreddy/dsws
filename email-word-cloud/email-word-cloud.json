@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "name": "Email Word Cloud",
+    "description": "Shows text word cloud of Email messages",
+    "tags": "agent, demo, word, cloud, email",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-22T23:24:41.230Z",
+    "id": "c593b159-dbb3-42c0-8b84-3c14019db1c5"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "c593b159-dbb3-42c0-8b84-3c14019db1c5",
+    "element": "<email-word-cloud></email-word-cloud>",
+    "icon": "aoc-email",
+    "files": [
+      "email-word-cloud/libs/zingchart.min.js",
+      "email-word-cloud/libs/zingchart-wordcloud.min.js",
+      "email-word-cloud/email-word-cloud.css",
+      "email-word-cloud/email-word-cloud.js"
+    ]
+  }
+}

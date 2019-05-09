@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "name": "Prompt Digits",
+    "description": "Prompt digits",
+    "tags": "agent, IVR, demo, digits, prompt, context, store",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-03-13T15:39:35.234Z",
+    "id": "eb8a08ac-918e-4e00-9a02-0b19713ab1d1"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "eb8a08ac-918e-4e00-9a02-0b19713ab1d1",
+    "element": "<prompt-digits></prompt-digits>",
+    "icon": "aoc-home",
+    "files": [
+      "prompt-digits/prompt-digits.css",
+      "prompt-digits/prompt-digits.js"
+    ]
+  }
+}

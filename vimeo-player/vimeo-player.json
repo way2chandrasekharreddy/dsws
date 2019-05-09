@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Vimeo Player",
+    "description": "Vimeo Player",
+    "tags": "demo, vimeo, player, media, video",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-25T13:33:28.374Z",
+    "id": "d4a795e0-b7ea-4cac-8f89-e676ca98721f"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "d4a795e0-b7ea-4cac-8f89-e676ca98721f",
+    "element": "<vimeo-player></vimeo-player>",
+    "icon": "aoc-home",
+    "files": ["vimeo-player/vimeo-player.css", "vimeo-player/vimeo-player.js"]
+  }
+}

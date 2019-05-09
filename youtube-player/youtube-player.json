@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "YouTube Player",
+    "description": "YouTube Player",
+    "tags": "demo, youtube, social, media, video, player",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-25T13:10:00.050Z",
+    "id": "514bea27-af48-49b7-a806-2cac343b69df"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "514bea27-af48-49b7-a806-2cac343b69df",
+    "element": "<youtube-player></youtube-player>",
+    "icon": "aoc-home",
+    "files": ["youtube-player/youtube-player.css", "youtube-player/youtube-player.js"]
+  }
+}

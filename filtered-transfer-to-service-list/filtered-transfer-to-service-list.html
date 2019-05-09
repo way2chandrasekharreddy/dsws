@@ -1,0 +1,21 @@
+<div class="neo-widget">
+
+  <div class="neo-widget__header aoc-home">3rd Party Widget</div>
+
+  <div class="neo-widget__content neo-widget__content--indented">
+      <p>Display Transfer to Service Destination List which has been configured by the Administrator.</p>
+      <p>This is a readonly view.</p>
+
+      <div class="row" ng-repeat="item in services">
+          <div class="grid--medium-2">
+            <figure class="neo-avatar" data-id="{{ item.id }}" title="{{ item.name }}"></figure>
+          </div>
+          <div class="grid--medium-6">
+            <span> id: {{ item.id }}</span> </br>
+            <small> name: : {{ item.name }}</small>
+          </div>
+        </div>
+    
+  </div>
+
+</div>

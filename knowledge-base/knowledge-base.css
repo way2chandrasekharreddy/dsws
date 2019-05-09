@@ -1,0 +1,83 @@
+.knowledge-base--styles {
+ background-color: white;
+}
+
+.neo-widget--knowledge-base .neo-widget__content p {
+ font-weight: bold !important;
+ cursor: pointer !important;
+ font-size: 28px !important;
+}
+
+.neo-widget--knowledge-base .neo-widget__content .neo-btn {
+ margin-bottom: 0 !important;
+}
+
+.neo-widget--knowledge-base  .cloud-heading {
+ font-size: 19px;
+ margin-left: 15px;
+ color: #616161;
+}
+
+.neo-widget--knowledge-base .refresh-button {
+ float: right;
+}
+
+.neo-widget--knowledge-base .input-text {
+ width: 400px;
+ margin-bottom: 5px !important;
+ height: 35px;
+}
+
+.neo-widget--knowledge-base .add-border {
+ border: solid 1px lightgray;
+}
+
+.neo-widget--knowledge-base .word-cloud-outer-div {
+ margin: 0 auto;
+ padding-top: 10px;
+ width: 565px;
+}
+
+.neo-widget--knowledge-base .word-cloud-inner-div {
+ margin-left: 20px !important;
+ margin-right: 20px !important;
+}
+
+.neo-widget--knowledge-base .input {
+ margin: 0 auto;
+ width: 400px;
+}
+
+.neo-widget--knowledge-base .restart-button {
+ background-color: lightgray !important;
+ color: #3C5064 !important;
+ border-radius: 32px !important;
+ font-weight: 100 !important;
+ height: 29px;
+ width: 68px;
+ max-height: 31px !important;
+ min-height: 20px !important;
+ min-width: 68px !important;
+ margin-top: 0px !important;
+ line-height: 1 !important;
+ text-transform: none !important;
+}
+
+.neo-widget--knowledge-base .waiting-div {
+ margin-left: 70px !important;
+ font-weight: bold !important;
+ font-size: 28px !important;
+}
+
+.neo-widget--knowledge-base .buttons {
+ margin: 0 auto;
+ width: 226px;
+}
+
+.neo-widget--knowledge-base .word {
+ border: solid 2px lightgray;
+ border-radius: 40px;
+ margin: 2px;
+ padding-left: 9px;
+ padding-right: 9px;
+}

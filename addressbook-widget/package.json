@@ -1,0 +1,22 @@
+{
+  "name": "c3i-address-book-widget",
+  "version": "1.0.0",
+  "description": "C3I-Address-Book widget",
+  "license": "",
+  "bugs": "",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-ng-annotate": "^3.0.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-tree": "^1.1.1",
+    "jit-grunt": "^0.10.0",
+    "change-case": "^3.0.1",
+    "uuid": "^3.1.0"
+  }
+}

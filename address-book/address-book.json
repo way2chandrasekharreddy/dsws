@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "name": "Address Book",
+    "description": "Simple address book widget to deomonstrate api.startVoiceInteraction method",
+    "tags": "demo, widget, voice, api",
+    "library": "Sample",
+    "version": "1.0.0",
+    "date": "2017-09-26T12:29:59.102Z",
+    "id": "8a2eb6df-da72-4cca-9c2e-608b5ea54030"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "8a2eb6df-da72-4cca-9c2e-608b5ea54030",
+    "element": "<address-book></address-book>",
+    "icon": "aoc-address-book",
+    "files": ["address-book/address-book.css", "address-book/address-book.js"]
+  }
+}

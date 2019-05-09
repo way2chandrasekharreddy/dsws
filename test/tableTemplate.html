@@ -1,0 +1,55 @@
+<div  class="container">
+    <!--TODO this for sample-->
+    <div>
+        ANI 
+        <input type="text" ng-model="ani" ng-keyup="getCallerInfo()"/>
+       
+    </div>
+
+    <h2 ><span class="label label-info">Caller Contact Info</span></h2>
+   <table  class="table  .table-hover" >
+       <thead>
+				    <tr  class="success">
+						    <th>Surname</th>
+						    <th>FirstName</th>
+						    <th>Site</th>
+						    <th>Appointment</th>
+						    <th>Rank</th>
+						    <th>PMKeys</th>
+						    <th>Region</th>
+						    <th>Function</th>
+						    <th>Mobile</th>
+						    <th>Pager</th>
+						    <th>Phone</th>
+						    <th>Fax</th>
+						    <th>AltContact</th>
+						    <th>AltPhone</th>
+						    <th>VOP</th>
+				    </tr>
+       	
+	    </thead>
+       <tbody>
+         <tr ng-repeat="caller in callerInfo"  class="info">
+         
+    					    <td>{{caller.surname}}</td>
+						    <td>{{caller.FirstName}}</td>
+						    <td>{{caller.site}}</td>
+						    <td>{{caller.appointment}}</td>
+						    <td>{{caller.rank}}</td>
+						    <td>{{caller.pmKeys}}</td>
+						    <td>{{caller.region}}</td>
+						    <td>{{caller.function}}</td>
+						    <td>{{caller.mobile}}</td>
+						    <td>{{caller.pager}}</td>
+						    <td>{{caller.phone}}</td>
+						    <td>{{caller.fax}}</td>
+						    <td>{{caller.altContact}}</td>
+						    <td>{{caller.altPhone}}</td>
+						    <td>{{caller.vip}}</td>
+            
+         </tr>
+       </tbody>
+ </table>
+   <button  type="button" class="btn btn-warning right">Trace Call</button>
+
+</div>

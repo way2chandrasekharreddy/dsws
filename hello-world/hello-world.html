@@ -1,0 +1,74 @@
+<div class="neo-widget widget--hello-world">
+
+  <div class="neo-widget__header aoc-home">Hello World</div>
+
+  <div class="neo-widget__content neo-widget__content--indented" cc-scrollbar>
+
+    <div class="neo-input-group">
+      <div class="neo-input-group__addon aoc-add"></div>
+      <input class="neo-input" value="" placeholder="Type a message..." ng-model="message"/>
+      <button class="neo-btn neo-btn--default" ng-click="sayHello(message)">Send</button>
+    </div>
+
+    <div class="row">
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Interaction Object</h3>
+        <pre>{{ interaction | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Agent Object</h3>
+        <pre>{{ agent | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Configuration Object</h3>
+        <pre>{{ configuration | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Navigation Object</h3>
+        <pre>{{ navigation | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Locale Object</h3>
+        <pre>{{ locale | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Customer Object</h3>
+        <pre>{{ customer | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Media Object</h3>
+        <pre>{{ media | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Media Message Object</h3>
+        <pre>{{ mediaMessage | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Context Object</h3>
+        <pre>{{ context | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Message Object</h3>
+        <pre>{{ message | json }}</pre>
+      </div>
+
+      <div class="grid--medium-12 grid--large-12">
+        <h3>Capabilities Object</h3>
+        <pre>{{ capabilities | json }}</pre>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

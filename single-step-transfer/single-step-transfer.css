@@ -1,0 +1,29 @@
+.department__row {
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.department-backround:hover {
+  border: solid 5px #2f72b5;
+}
+
+.department-backround {
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.department-backround__text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+}
+

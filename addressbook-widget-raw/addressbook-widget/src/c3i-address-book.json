@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "name": "C3i Address Book",
+    "description": "C3i Address Book",
+    "tags": "widget, other",
+    "library": "C3I Address book library",
+    "version": "1.0.0",
+    "date": "2017-10-12T12:37:42.514Z",
+    "id": "45d4feef-f97b-4926-ac50-e7e19d232351"
+  },
+  "configuration": {
+    "external": true,
+    "timeout": 5000,
+    "serie": true,
+    "name": "45d4feef-f97b-4926-ac50-e7e19d232351",
+    "element": "<c3i-address-book></c3i-address-book>",
+    "icon": "aoc-home",
+    "files": [
+      "/services/C3i-Addressbook-1.0.0.0.0/widget/libs/md-data-table.js",
+      "/services/C3i-Addressbook-1.0.0.0.0/widget/c3i-address-book.css",
+      "/services/C3i-Addressbook-1.0.0.0.0/widget/c3i-address-book.js"
+    ]
+  }
+}

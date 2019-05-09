@@ -1,0 +1,13 @@
+<div class="neo-widget">
+
+  <div class="neo-widget__header aoc-home">Prompt Digits</div>
+
+  <div class="neo-widget__content">
+    <iframe src="{{ trustAsResourceUrl(pdfUrl) }}" width="100%" height="100%" frameborder="0" allowfullscreen ng-show="urlValid"></iframe>
+
+    <div class="neo-empty-state" ng-show="!urlValid">
+      <p class="aoc-info-outline">Document for id "{{ ::context }}" not found </p>
+    </div>
+  </div>
+
+</div>
