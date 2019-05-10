@@ -1,0 +1,60 @@
+<div align="center" border="1">
+    <!--TODO this for sample-->
+    <table border="0" align="center">
+        <thead>
+            <tr>
+                <th style="font:large">*</th>
+                <th width="160">Surname&nbsp</th>
+                <th width="160">FirstName&nbsp</th>
+                <th width="160">Site&nbsp</th>
+                <th width="160">Appointment&nbsp</th>
+                <th width="160">Rank&nbsp</th>
+                <th width="160">PMKeys&nbsp</th>
+                <th width="160">Region&nbsp</th>
+                <th width="160">Function&nbsp</th>
+                <th width="160">Mobile&nbsp</th>
+                <th width="160">Pager&nbsp</th>
+                <th width="160">Phone&nbsp</th>
+                <th width="160">Fax&nbsp</th>
+                <th width="160">AltContact&nbsp</th>
+                <th width="160">AltPhone&nbsp</th>
+                <th width="160">VOP&nbsp</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr ng-repeat="dest in destinationData | filter:searchByValue |limitTo : 25 " ng-mouseover="makeTransfer()" class="border_bottom">
+                
+                
+                <td>
+
+                    <img ng-show="dest.status==='available'" ng-src="/images/green.gif" height="20" width="20">
+                    <img ng-show="dest.status==='busy'" ng-src="/images/red.gif" height="20" width="20">
+                    <img ng-show="dest.status==='away'" ng-src="/images/yellow.gif" height="20" width="20">
+                    <img ng-show="dest.status==='DND'" ng-src="/images/Busy.gif" height="20" width="20">
+
+                </td>
+                
+                
+                
+                <td>{{dest.surname}}</td>
+                <td>{{dest.firstName}}</td>
+                <td>{{dest.site}}</td>
+                <td>{{dest.appointment}}</td>
+                <td>{{dest.rank}}</td>
+                <td>{{dest.pmKeys}}</td>
+                <td>{{dest.region}}</td>
+                <td>{{dest.function}}</td>
+                <td>{{dest.mobile}}</td>
+                <td>{{dest.pager}}</td>
+                <td>{{dest.phone}}</td>
+                <td>{{dest.fax}}</td>
+                <td>{{dest.altContact}}</td>
+                <td>{{dest.altPhone}}</td>
+                <td>{{dest.vip}}</td>
+            </tr>
+        </tbody>
+    </table>
+   
+
+</div>
