@@ -1,55 +1,67 @@
-<div  class="container">
+<div align="center" border="1">
     <!--TODO this for sample-->
-    <div>
-        ANI 
-        <input type="text" ng-model="ani" ng-keyup="getCallerInfo()"/>
-       
-    </div>
+    <table border="0" align="center">
+        <thead>
+            <tr>
+                <td>
+                    ANI
+                </td>
+                <td>
+                    <input type="text" ng-model="ani" ng-keyup="getCallerInfo()" />
+                </td>
+            </tr>
+            <tr sty>
+                <td style="background-color:#666666;" align="center" colspan="15">
+                    <span style="color:white;font-size:x-large";><strong>Caller Contact Info</strong></span>
+                </td>
 
-    <h2 ><span class="label label-info">Caller Contact Info</span></h2>
-   <table  class="table  .table-hover" >
-       <thead>
-				    <tr  class="success">
-						    <th>Surname</th>
-						    <th>FirstName</th>
-						    <th>Site</th>
-						    <th>Appointment</th>
-						    <th>Rank</th>
-						    <th>PMKeys</th>
-						    <th>Region</th>
-						    <th>Function</th>
-						    <th>Mobile</th>
-						    <th>Pager</th>
-						    <th>Phone</th>
-						    <th>Fax</th>
-						    <th>AltContact</th>
-						    <th>AltPhone</th>
-						    <th>VOP</th>
-				    </tr>
-       	
-	    </thead>
-       <tbody>
-         <tr ng-repeat="caller in callerInfo"  class="info">
-         
-    					    <td>{{caller.surname}}</td>
-						    <td>{{caller.FirstName}}</td>
-						    <td>{{caller.site}}</td>
-						    <td>{{caller.appointment}}</td>
-						    <td>{{caller.rank}}</td>
-						    <td>{{caller.pmKeys}}</td>
-						    <td>{{caller.region}}</td>
-						    <td>{{caller.function}}</td>
-						    <td>{{caller.mobile}}</td>
-						    <td>{{caller.pager}}</td>
-						    <td>{{caller.phone}}</td>
-						    <td>{{caller.fax}}</td>
-						    <td>{{caller.altContact}}</td>
-						    <td>{{caller.altPhone}}</td>
-						    <td>{{caller.vip}}</td>
-            
-         </tr>
-       </tbody>
- </table>
-   <button  type="button" class="btn btn-warning right">Trace Call</button>
+            <tr>
+                <th width="160">Surname&nbsp</th>
+                <th width="160">FirstName&nbsp</th>
+                <th width="160">Site&nbsp</th>
+                <th width="160">Appointment&nbsp</th>
+                <th width="160">Rank&nbsp</th>
+                <th width="160">PMKeys&nbsp</th>
+                <th width="160">Region&nbsp</th>
+                <th width="160">Function&nbsp</th>
+                <th width="160">Mobile&nbsp</th>
+                <th width="160">Pager&nbsp</th>
+                <th width="160">Phone&nbsp</th>
+                <th width="160">Fax&nbsp</th>
+                <th width="160">AltContact&nbsp</th>
+                <th width="160">AltPhone&nbsp</th>
+                <th width="160">VOP&nbsp</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr ng-repeat="caller in callerInfo" class="border_bottom">
+
+                <td>{{caller.surname}}</td>
+                <td>{{caller.firstName}}</td>
+                <td>{{caller.site}}</td>
+                <td>{{caller.appointment}}</td>
+                <td>{{caller.rank}}</td>
+                <td>{{caller.pmKeys}}</td>
+                <td>{{caller.region}}</td>
+                <td>{{caller.function}}</td>
+                <td>{{caller.mobile}}</td>
+                <td>{{caller.pager}}</td>
+                <td>{{caller.phone}}</td>
+                <td>{{caller.fax}}</td>
+                <td>{{caller.altContact}}</td>
+                <td>{{caller.altPhone}}</td>
+                <td>{{caller.vip}}</td>
+
+            </tr>
+
+            <tr>
+                <td colspan="15" align="right">
+                    <button ng-click="traceCall()" type="button" class="btn btn-warning right">Trace Call</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+   
 
 </div>

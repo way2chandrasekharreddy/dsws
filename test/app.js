@@ -42,13 +42,20 @@ app.factory( "DswwService", function ( TmpData ) {
     return factory;
 } );
 
+
+
 app.controller( "ngtableCtrl", function ( $scope, DswwService ) {
     $scope.getCallerInfo = function () {
         console.log( $scope.ani )
         $scope.callerInfo = DswwService.getContactInfoByAni( $scope.ani );
     }
-} );
 
+    $scope.traceCall = function () {
+
+        alert( "work in progress for " + $scope.ani )
+    }
+
+} );
 
 
 app.factory( "TmpData", function () {
@@ -57,13 +64,25 @@ app.factory( "TmpData", function () {
 
     factory.listOfCallerInfo = [
         {
-            surname: "Talbot Hobbs1", FirstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "12", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "12", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
         }, {
-            surname: "Talbot Hobbs1", FirstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "12", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "12", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
         }, {
-            surname: "Talbot Hobbs1", FirstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "123", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "123", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
         }, {
-            surname: "Talbot Hobbs1", FirstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "1234", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "1234", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+        }, {
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "123", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+        }, {
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "123", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+        }, {
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "123", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+        }, {
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "123", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+        }, {
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "123", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
+        }, {
+            surname: "Talbot Hobbs1", firstName: "John", site: "Perth", appointment: "Job title", rank: "Lieutenant General", pmKeys: "ARMY", region: "WA", function: "", mobile: "123", pager: "", phone: "123425345346", fax: "", altContact: "1242345", altPhone: "", vip: ""
         }
     ];
     return factory;

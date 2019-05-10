@@ -1,0 +1,443 @@
+a.groupmenulink {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; font-style: normal; font-weight: bold; 
+}
+a.groupmenulink:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; text-decoration: underline; font-weight: bold
+}
+a.groupmenulink:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000000; font-weight: bold; text-decoration: none;
+}
+
+a.menulink {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color:#000000; text-decoration: none; height: 12px;
+}
+a.menulink:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color:#000000; text-decoration: underline; height: 12px;
+}
+a.menulink:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color:#000000; text-decoration: underline; height: 12px;
+}
+
+a.rollovermenu { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #000000; text-decoration: none;
+}
+a.rollovermenu:hover { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px; color: #000000; text-decoration: underline
+}
+
+a.file {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: underline; font-weight: normal
+}
+a.file:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: underline; font-weight: normal
+}
+a.file:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; text-decoration: underline; font-weight: normal
+}
+
+a.helpandexit { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF; text-decoration: none
+}
+a.helpandexit:hover { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF; text-decoration: underline
+}
+a.helpandexit:active { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF; text-decoration: underline
+}
+
+.footer { 
+	font-family: verdana; color:#000000; font-weight: normal; font-size: 10px; text-align: center; 
+}
+.footer A {
+	color:#FFFFFF;
+}
+
+.bread {
+	font-family: verdana; color:#999999; font-weight: normal; font-size: 10px; 
+}
+.bread A {
+	color:#000000;
+}
+.bread A:visited {
+	color:#000000;
+}
+
+.heading1plain { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #333333; font-style: normal; valign:middle; background-color: #FFFFFF;
+}
+.heading1sub { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #333333; font-style: normal 
+}
+.heading2plain {
+    font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: #333333;  
+}
+
+.heading1 {
+        font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 17px; font-weight: bold; color: #FFFFFF; font-style: italic
+}
+.heading2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #333333; font-weight: bold
+}
+.title {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold
+}
+.sitenamew {
+	font-family: verdana; color:#FFFFFF; font-weight: bold; font-size:20px; text-decoration: none;
+}
+.forms { 
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000
+}
+.titlecolumn {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #ffffff; font-weight: bold; text-decoration: none; background: #666666;
+}
+
+.topalign { 
+	vertical-align: top; 
+}
+
+.leftcolumn {
+    text-align: left;
+}
+.leftcolumnNoWrap {
+    text-align: left;
+    white-space: nowrap; 
+}
+.rightcolumn {
+    text-align: right;
+}
+.centercolumn {
+    text-align: center;
+}
+.centercolumnNoWrap {
+    text-align: center;
+    white-space: nowrap; 
+}
+
+.oddrow {
+	background: #FFFFFF
+}
+.evenrow {
+	background: #EEEEEE
+}
+
+.columnspacer_5 {
+	width: 5px;
+}
+.columnspacer_10 {
+	width: 10px;
+}
+.columnspacer_15 {
+	width: 15px;
+}
+.columnspacer_20 {
+	width: 20px;
+}
+.columnspacer_80 {
+	width: 80px;
+}
+.columnspacer_125 {
+	width: 125px;
+}
+.columnspacer_150 {
+	width: 150px;
+}
+.columnspacer_160 {
+	width: 160px;
+}
+.columnspacer_175 {
+	width: 175px;
+}
+.columnspacer_200 {
+	width: 200px;
+}
+.columnspacer_220 {
+	width: 220px;
+}
+.columnspacer_222 {
+	width: 222px;
+}
+.columnspacer_225 {
+	width: 225px;
+}
+.columnspacer_250 {
+	width: 250px;
+}
+.columnspacer_300 {
+	width: 300px;
+}
+
+.width_20_percent {
+	width: 20%;
+}
+.width_25_percent {
+	width: 25%;
+}
+.width_33_percent {
+	width: 33%;
+}
+.width_50_percent {
+	width: 50%;
+}
+.width_66_percent {
+	width: 66%;
+}
+.width_75_percent {
+	width: 75%;
+}
+
+.rowspacer_5 {
+	height: 5px;
+}
+.rowspacer_10 {
+	height: 10px;
+}
+.rowspacer_15 {
+	height: 15px;
+}
+.rowspacer_20 {
+	height: 20px;
+}
+
+.progressBarIE6 {
+	visibility:hidden;
+	border-right: activeborder thin outset;
+	border-top: activeborder thin outset;
+	font-size: x-small;
+	z-index: 1003;
+	left: 30%;
+	border-left: activeborder thin outset;
+	border-bottom: activeborder thin outset;
+	font-family: Verdana, Arial;
+	position: absolute;
+	bottom: 57%;
+	border-collapse: collapse;
+	background-color: #666666;	
+	font-weight:bold;
+	color:white;
+	width: 350px;
+	height: 50px;
+	text-align: center;
+}
+.progressBar {
+	visibility: hidden;
+	border-right: activeborder thin outset;
+	border-top: activeborder thin outset;
+	font-size: x-small;
+	z-index: 1003;
+	border-left: activeborder thin outset;
+	border-bottom: activeborder thin outset;
+	font-family: Verdana, Arial;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border-collapse: collapse;
+	background-color: #666666;	
+	font-weight:bold;
+	color:white;
+	width: 350px;
+	height: 50px;
+	text-align: center;
+}
+.progressBarGroup {
+	position: relative; 
+	bottom: 150px;
+	left: 30%;
+}
+	
+.fatal {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+	font-style: normal; font-weight: normal; color: #FF0000
+}
+.errors {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+	font-style: normal; font-weight: normal; color: #FF1F1F
+}
+.warn {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+	font-style: normal; font-weight: normal; color: #FF3F00
+}
+.info {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+	font-style: normal; font-weight: normal; color: #0000FF
+}
+
+body {
+	background:#FFFFFF;
+}
+body.no_space {
+        margin: 0
+}
+
+form {
+	margin-top: 0px; margin-bottom: 0px; margin: 0px;
+}
+
+table {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+}
+table.no_space {
+	border: 0; padding: 0;
+}
+th {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #ffffff; font-weight: bold; text-decoration: none; background: #666666; 
+}
+tr.alt {
+	background: #EEEEEE
+}
+td.big_spacer {
+	height: 22px; valign: middle;
+}
+tr.border_bottom td {
+  border-bottom:1pt solid black;
+
+}
+
+tr:hover {
+    background: transparent;
+}
+tr:hover td {
+    background: #c7d4dd !important;
+}
+
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px
+}
+
+input {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #000000; width: 100%
+}
+input.button {
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; background-color: 333333; height: 23px; color: #FFFFFF
+}
+input.disabledbutton {
+    font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; background-color: 999999; height: 23px; color: #CCCCCC;
+}
+
+.small_font {  
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: normal; color: #000000
+}
+.small {
+	font-family: verdana; color:#000000; font-weight: normal; font-size: 10px; 
+}
+
+.blacktext {
+	font-family: verdana; color:#000000; font-weight: normal; font-size: 11px;
+}
+.whitetext {
+	font-family: verdana; color:#FFFFFF; font-weight: normal; font-size: 11px;
+}
+
+.boldblack {
+	font-family: verdana; color:#000000; font-weight: bold; font-size: 11px; white-space: nowrap;
+}
+.smboldblack {
+	font-family: verdana; color:#000000; font-weight: bold; font-size: 10px;
+}
+
+.whitetxt_small {
+	font-family: verdana; color:#FFFFFF; font-weight: bold; font-size: 11px
+}
+.whitetxt_small_nowrap {
+	font-family: verdana; color:#FFFFFF; font-weight: bold; font-size: 11px; white-space: nowrap;
+}
+.whitetxt_small_nowrap_norm {
+	font-family: verdana; color:#FFFFFF; font-weight: normal; font-size: 11px; white-space: nowrap;
+}
+
+.just_bold {
+	font-weight: bold; 
+}
+	
+
+.topMenuBackground {
+	background:#CC0000;
+	background-image: url(images/common/red_metal_strip.jpg);
+}
+
+
+.graytxt {
+	color: gray;
+}
+
+
+/* Popup container */
+.popup {
+	width: 80px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.BlindTransfer {
+   background-image: url('images/transfer-btn-normal.png');
+   height: 50px;
+   width: 60px;
+   display:inline-block;
+   
+}
+
+.BlindTransfer:hover {
+   background-image: url('images/transfer-btn-hover.png');
+}
+
+.WarmTransfer {
+   background-image: url('images/conference-btn-normal.png');
+   height: 50px;
+   width: 60px;
+   display:inline-block;
+}
+
+.WarmTransfer:hover {
+   background-image: url('images/conference-btn-hover.png');
+}
+
+/* Popup container */

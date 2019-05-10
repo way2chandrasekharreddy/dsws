@@ -1,0 +1,97 @@
+<div class="container">
+
+    <div>
+        <table >
+            <thead>
+                <tr class="success">
+                    <th></th>
+                    <th>Surname</th>
+                    <th>FirstName</th>
+                    <th>Site</th>
+                    <th>Appointment</th>
+                    <th>Rank</th>
+                    <th>PMKeys</th>
+                    <th>Region</th>
+                    <th>Function</th>
+                    <th>Mobile</th>
+                    <th>Pager</th>
+                    <th>Phone</th>
+                    <th>Fax</th>
+                    <th>AltContact</th>
+                    <th>AltPhone</th>
+                    <th>VOP</th>
+                </tr>
+
+            </thead>
+        </table>
+
+    </div>
+
+
+    <h2><span >Caller Contact Info</span></h2>
+    <table>
+        <thead>
+            <tr class="success">
+                <th></th>
+                <th>Surname</th>
+                <th>FirstName</th>
+                <th>Site</th>
+                <th>Appointment</th>
+                <th>Rank</th>
+                <th>PMKeys</th>
+                <th>Region</th>
+                <th>Function</th>
+                <th>Mobile</th>
+                <th>Pager</th>
+                <th>Phone</th>
+                <th>Fax</th>
+                <th>AltContact</th>
+                <th>AltPhone</th>
+                <th>VOP</th>
+            </tr>
+        <tbody>
+            <tr class="info">
+                <td><input type="text" ng-model="surname" /></td>
+                <td><input type="text" ng-model="FirstName" /></td>
+                <td><input type="text" ng-model="site" /></td>
+                <td><input type="text" ng-model="appointment" /></td>
+                <td><input type="text" ng-model="rank" /></td>
+                <td><input type="text" ng-model="pmKeys" /></td>
+                <td><input type="text" ng-model="region" /></td>
+                <td><input type="text" ng-model="function" /></td>
+                <td><input type="text" ng-model="mobile" /></td>
+                <td><input type="text" ng-model="pager" /></td>
+                <td><input type="text" ng-model="phone" /></td>
+                <td><input type="text" ng-model="fax" /></td>
+                <td><input type="text" ng-model="altContact" /></td>
+                <td><input type="text" ng-model="altPhone" /></td>
+                <td><input type="text" ng-model="vip" /></td>
+
+            </tr>
+        </tbody>
+        </thead>
+        <tbody>
+            <tr ng-repeat="caller in callerInfo" >
+                <td>A</td>
+                <td>{{caller.surname}}</td>
+                <td>{{caller.FirstName}}</td>
+                <td>{{caller.site}}</td>
+                <td>{{caller.appointment}}</td>
+                <td>{{caller.rank}}</td>
+                <td>{{caller.pmKeys}}</td>
+                <td>{{caller.region}}</td>
+                <td>{{caller.function}}</td>
+                <td>{{caller.mobile}}</td>
+                <td>{{caller.pager}}</td>
+                <td>{{caller.phone}}</td>
+                <td>{{caller.fax}}</td>
+                <td>{{caller.altContact}}</td>
+                <td>{{caller.altPhone}}</td>
+                <td>{{caller.vip}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-warning right">Trace Call</button>
+
+</div>
